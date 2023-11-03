@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/jankenstyle.css">
+    <title>じゃんけん</title>
+</head>
+<body>
+
+    <audio id="btn_audioBGM">
+        <source src="./audio/RPG_Battle_03.mp3" type="audio/mp3">
+    </audio>
+
+    <div>
+        <input type="checkbox" id="more-toggle" class="more-toggle">
+        <label for="more-toggle" class="more-button"></label>
+        <ul class="hidden-content">
+            <h2>魔王を倒せ！</h2>
+            <div class="relative">
+                <h3 >討伐を開始せよ！！</h3>
+                <h4 >勇者の行動を選択せよ</h4>
+                <img class="imgHaikei" src=".\img\haikei.jpg" alt="makaihaikei">
+                <img class="imgKaiju" src=".\img\kaiju.png" alt="kaiju">
+                <img class="imgYusha" style="transform: scaleX(-1);" src=".\img\yusha.png" alt="yuusha">
+
+                <table id="tbkaiju" border="1" bgcolor="#333" cellspacing="1" >
+                    <tr>
+                        <th id="kaiju_hp_1" bgcolor="#green">　　</th>
+                        <th id="kaiju_hp_2" bgcolor="#green">　　</th>
+                        <th id="kaiju_hp_3" bgcolor="#green">　　</th>
+                        <th id="kaiju_hp_4" bgcolor="#green">　　</th>
+                        <th id="kaiju_hp_5" bgcolor="#green">　　</th>
+                    </tr>
+                </table>
+
+                <table id="tbyusha" border="1" bgcolor="#333" cellspacing="1">
+                    <tr>
+                        <th id="Yusha_hp_1" bgcolor="#green">　　</th>
+                        <th id="Yusha_hp_2" bgcolor="#green">　　</th>
+                        <th id="Yusha_hp_3" bgcolor="#green">　　</th>
+                        <th id="Yusha_hp_4" bgcolor="#green">　　</th>
+                        <th id="Yusha_hp_5" bgcolor="#green">　　</th>
+                    </tr>
+                </table>
+            </div>
+            <ul>
+                <li id="at_btn">攻撃</li>
+                <li id="df_btn">防御</li>
+                <li id="cr_btn">回復</li>
+            </ul>
+    </div>
+   
+
+        </ul>
+      </div>
+
+    
+      <audio id="btn_audioAT">
+        <source src="./audio/Attack.mp3" type="audio/mp3">
+    </audio>
+    <audio id="btn_audioPR">
+        <source src="./audio/Protect.mp3" type="audio/mp3">
+    </audio>
+    <audio id="btn_audioCR">
+        <source src="./audio/Cure.mp3" type="audio/mp3">
+    </audio>
+    <audio id="btn_audioKS">
+        <source src="./audio/Kaiju.mp3" type="audio/mp3">
+    </audio>
+
+ 
+    
+    <!-- <input type="checkbox" id="popup">
+<label class="popup-open" for="popup">ポップアップを表示する</label>
+<div class="popup-overlay">
+    <div class="popup-window">
+        <p class="popup-text">ポップアップの中身のテキスト</p>
+        <label class="popup-close" for="popup">
+            <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+            </svg>
+        </label>
+    </div>
+</div> -->
+
+<footer></footer>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/originaljanken2.js"></script>
+
+</body>
+</html>
